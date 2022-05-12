@@ -1,0 +1,84 @@
+/* FONTS */
+
+// TITLES
+h1,
+h2,
+[class$="-overline"] {
+  font-weight: map-get($font-weight, "Black");
+}
+
+[class$="-title"]:not(.footer-section-presentation h2) {
+  color: $neutral-color-black;
+}
+
+h1 {
+  font-size: map-get($font-size, "desktop", "large");
+  line-height: map-get($line-height, "large");
+  margin: {
+    bottom: 3.4rem;
+  }
+
+  @include tablet-only {
+    font-size: map-get($font-size, "tablet", "x-large");
+    line-height: map-get($line-height, "x-large");
+    margin: {
+      bottom: 2.4rem;
+    }
+  }
+
+  @include mobile-only {
+    font-size: map-get($font-size, "mobile", "medium");
+    line-height: map-get($line-height, "medium");
+  }
+}
+
+h2 {
+  font-size: map-get($font-size, "desktop", "medium");
+  line-height: map-get($line-height, "medium");
+
+  @include mobile-only {
+    font-size: map-get($font-size, "mobile", "x-medium");
+    line-height: map-get($line-height, "x-medium");
+  }
+}
+
+// PARAGRAPHS
+[class$="-p"]:not(.footer-section-presentation p) {
+  color: $neutral-color-grey;
+
+  @include tablet-only {
+    font-size: map-get($font-size, "tablet", "x-small");
+  }
+}
+
+p {
+  font-size: map-get($font-size, "desktop", "small");
+  font-weight: map-get($font-weight, "Medium");
+  line-height: map-get($line-height, "small");
+}
+
+// OVERLINE
+[class$="-overline"] {
+  color: $primary-color;
+  font-size: map-get($font-size, "desktop", "x-small");
+  line-height: map-get($line-height, "small");
+  letter-spacing: 0.4rem;
+  margin: {
+    bottom: 1.6rem;
+  }
+}
+
+// BUTTONS
+.btn {
+  font-size: map-get($font-size, "desktop", "x-small");
+  font-weight: map-get($font-weight, "Black");
+  line-height: map-get($line-height, "small");
+}
+
+// TIMELINE
+[class$="__number"] {
+  color: $neutral-color-grey;
+  font-size: map-get($font-size, "desktop", "x-small");
+  font-weight: map-get($font-weight, "Black");
+  line-height: 5.6rem;
+}

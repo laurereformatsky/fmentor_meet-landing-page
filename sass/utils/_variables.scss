@@ -1,0 +1,62 @@
+// COLORS
+$primary-color: #4d96a9;
+$primary-color-hover: #71c0d4;
+$primary-color-active: #8fe3f9;
+$secondary-color: #855fb1;
+$secondary-color-hover: #b18bdd;
+$secondary-color-active: #d9b8ff;
+$neutral-color-black: #28283d;
+$neutral-color-grey: #87879d;
+$neutral-color-white: #fafafa;
+
+// FONT
+$font-family: "Red Hat Display", sans-serif;
+$base-font-size: 62.5%;
+
+$font-size: (
+  "desktop": (
+    "x-small": 1.6rem,
+    "small": 1.8rem,
+    "medium": 4rem,
+    "large": 6.4rem
+  ),
+  "tablet": (
+    "x-small": 1.6rem,
+    "x-large": 4.8rem
+  ),
+  "mobile": (
+    "x-medium": 3.2rem,
+    "medium": 4rem
+  )
+);
+
+$font-weight: (
+  "Medium": 500,
+  "Black": 900
+);
+
+$line-height: (
+  "small": 2.6rem,
+  "x-medium": 3.6rem,
+  "medium": 4.4rem,
+  "x-large": 4.8rem,
+  "large": 6.4rem
+);
+
+// IMAGES
+$img-position-desktop: -2.6rem;
+
+// TIMELINE OF SECTION
+$num-dimension: 5.6rem;
+$neutral-color-lighten: lighten($neutral-color-grey, 25%);
+
+// TIMELINE IN THE FOOTER
+$num-footer-height: 12rem;
+
+// LAYOUT
+$breaking-points: (
+  "x-desktop": 1200px,
+  "x-tablet": 992px,
+  "tablet": 768px,
+  "mobile": 475px
+);

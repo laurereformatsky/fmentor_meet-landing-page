@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Meet landing page</title>
+    <!--FAV ICON-->
+    <link rel="icon" href="./assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <!--LOGO OF THE PAGE-->
+      <div class="header-logo">
+        <img src="./assets/logo.svg" alt="Logo of meet with two color circles.">
+      </div>
+
+      <!--HEADER PRESENTATION OF THE PAGE-->
+      <div class="header-presentation-wrapper">
+        <div class="header-presentation__img">
+          <img class="img--center" src="./assets/tablet/image-hero.png" alt="Various profile pictures of meet in bubbles.">
+        </div>
+
+        <div class="header-presentation__img">
+          <img class="img--left" src="./assets/desktop/image-hero-left.png" alt="Various profile pictures of meet in bubbles.">
+        </div>
+        
+        <section class="section-presentation header-section-presentation">
+          <h1 class="section-presentation-title">Group Chat for Everyone</h1>
+          <p class="section-presentation-p">
+            Meet makes it easy to connect with others face-to-face virtually
+            and collaborate across any device.
+          </p>
+          <div class="section-presentation-btn">
+            <a class="btn btn-primary btn-download" href="#">Download<span class="version version-primary">v1.3</span></a>
+            <a class="btn btn-secondary btn-brand" href="#">What is it?</a>
+          </div>
+        </section>
+
+        <div class="header-presentation__img">
+          <img class="img--right" src="./assets/desktop/image-hero-right.png" alt="Various profile pictures of meet in bubbles.">
+        </div>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+      <div class="timeline">
+        <div class="timeline__element-before"></div>
+        <div class="timeline__number">01</div>
+      </div>
+
+      <div class="section-gallery">
+        <img class="img-gallery" src="./assets/desktop/image-woman-in-videocall.jpg" alt="A woman in her kitchen is smiling during a video call on her laptop.">
+        <img class="img-gallery" src="./assets/desktop/image-women-videochatting.jpg" alt="A group of three old women who are happy during a video chatting on the smartphone of one of them.">
+        <img class="img-gallery" src="./assets/desktop/image-men-in-meeting.jpg" alt="A man on his desktop is writing on different papers during a meeting with an other person on his laptop.">
+        <img class="img-gallery" src="./assets/desktop/image-man-texting.jpg" alt="A man in his living room is smiling while texting on his smartphone.">
+      </div>
+    
+      <section class="section-presentation main-section-presentation">
+        <p class="section-presentation-overline">Built for modern use</p>
+        <h2 class="section-presentation-title">Smarter meetings, all in one place</h2>
+        <p class="section-presentation-p">
+          Send messages, share files, show your screen, and record your
+          meetings — all in one workspace. Control who can join with
+          invite-only team access, data encryption, and data export.
+        </p>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="timeline">
+        <div class="timeline__element-before"></div>
+        <div class="timeline__number">02</div>
+      </div>
+
+      <section class="section-presentation footer-section-presentation">
+        <h2 class="section-presentation-title">Experience more together</h2>
+        <p class="section-presentation-p">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <a class="btn btn-secondary btn-download" href="#">Download<span class="version version-secondary">v1.3</span></a>
+      </section>
+
+      <picture class="footer-background">
+        <source media="(min-width: 768px)" srcset="./assets/desktop/image-footer.jpg">
+        <source media="(min-width: 475px)" srcset="./assets/tablet/image-footer.jpg">
+        <img src="./assets/mobile/image-footer.jpg" alt="A woman who have eyes closed in her living room is listening to music with her headphones.">
+      </picture>
+    </footer>
+
+  </body>
+
+</html>

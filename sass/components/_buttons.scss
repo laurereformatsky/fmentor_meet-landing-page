@@ -1,0 +1,96 @@
+/* BUTTONS */
+
+// DOWNLOAD NUMBER VERSION OF MEET
+.version {
+  margin: {
+    left: 0.4rem;
+  }
+
+  &-primary {
+    color: $primary-color-active;
+  }
+
+  &-secondary {
+    color: $secondary-color-active;
+  }
+}
+
+// BUTTONS
+.btn {
+  height: 5.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: $neutral-color-white;
+  border-radius: 10rem;
+  box-shadow: rgba(40, 40, 61, 10%) 0 0.4rem 0.6rem -0.1rem, rgba(40, 40, 61, 6%) 0 0.2rem 0.4rem -0.1rem;
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  // ANIMATION
+  &::before {
+    content: "";
+
+    @include animation($mix-blend-mode: lighten);
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  // BUTTONS COLOR THEME
+  &-primary {
+    background-color: $primary-color;
+
+    &::before {
+      background-color: $primary-color-hover;
+    }
+
+    &:hover {
+      > .version-primary {
+        color: $primary-color;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+
+    &::before {
+      background-color: $secondary-color-hover;
+    }
+
+    &:hover {
+      > .version-secondary {
+        color: $secondary-color;
+        z-index: 1;
+      }
+    }
+  }
+
+  // BUTTON BRAND
+  &-brand {
+    width: 13.9rem;
+
+    &:hover {
+      &::before {
+        height: 240%; // 139px / 58px
+      }
+    }
+  }
+
+  // BUTTON DOWNLOAD
+  &-download {
+    width: 19.3rem;
+
+    &:hover {
+      &::before {
+        height: 333%; // 193px / 58px
+      }
+    }
+  }
+}

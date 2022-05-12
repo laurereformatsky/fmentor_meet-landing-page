@@ -1,0 +1,39 @@
+/* TIMELINE OF SECTION */
+
+.timeline {
+  width: $num-dimension;
+  height: 14rem;
+
+  &__element-before {
+    width: 0.1rem;
+    height: 8.4rem;
+    position: relative;
+    left: 2.7rem; // (56px / 2) - 1
+    background-color: $neutral-color-lighten;
+  }
+
+  &__number {
+    width: $num-dimension;
+    height: $num-dimension;
+    position: relative;
+    border-radius: 50%;
+    border: 0.1rem solid $neutral-color-lighten;
+    background-color: $neutral-color-white;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+
+      @include animation($mix-blend-mode: darken, $bg-color: $neutral-color-lighten);
+    }
+
+    &:hover {
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

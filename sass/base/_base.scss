@@ -1,0 +1,74 @@
+/* GENERAL STYLE */
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $font-family;
+  overflow-x: hidden;
+}
+
+body,
+header.header,
+main.main,
+footer.footer,
+div,
+section,
+picture,
+source,
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+// HEADER + MAIN + FOOTER
+.header,
+.main,
+.footer {
+  @include x-desktop-only {
+    padding: {
+      left: 3.9rem;
+      right: 3.9rem;
+    }
+  }
+
+  @include tablet-only {
+    padding: {
+      left: 3.15rem;
+      right: 3.15rem;
+    }
+  }
+
+  @include mobile-only {
+    padding: {
+      left: 2.4rem;
+      right: 2.4rem;
+    }
+  }
+}
+
+// ELEMENTS OF MAIN
+.main > .timeline,
+.section-gallery,
+.main-section-presentation {
+  margin: 0 auto;
+}
+
+// BACKGROUND IMAGES
+.footer-background,
+.img-gallery {
+  background-color: $primary-color;
+}

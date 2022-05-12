@@ -1,0 +1,68 @@
+/* HEADER */
+
+.header {
+  &-logo {
+    height: 16.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-only {
+      height: 14rem;
+    }
+
+    @include mobile-only {
+      height: 13rem;
+    }
+
+    > img {
+      width: 11.9rem;
+      height: 2.8rem;
+    }
+  }
+
+  &-presentation {
+    &-wrapper {
+      min-height: 35.8rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+
+      @include x-tablet-only {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 26.2rem;
+        row-gap: 7.2rem;
+      }
+
+      @include mobile-only {
+        grid-template-rows: 1fr 35.4rem;
+        row-gap: 4.8rem;
+      }
+    }
+
+    &__img {
+      max-width: 39.4rem;
+
+      &:first-child {
+        display: none;
+
+        @include x-tablet-only {
+          max-width: 91.4rem;
+          display: inline-block;
+          grid-column: 1 / span 2;
+        }
+      }
+
+      &:last-child {
+        justify-self: end;
+      }
+
+      &:nth-child(2),
+      &:last-child {
+        @include x-tablet-only {
+          display: none;
+        }
+      }
+    }
+  }
+}

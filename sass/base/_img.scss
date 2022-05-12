@@ -1,0 +1,27 @@
+/* IMGAGES */
+
+picture > img {
+  height: 100%;
+}
+
+img:not(.header > img),
+source {
+  object-position: center;
+  object-fit: cover;
+}
+
+.img {
+  &--left {
+    position: relative;
+    left: $img-position-desktop;
+  }
+
+  &--right {
+    position: relative;
+    right: $img-position-desktop;
+  }
+
+  &-gallery {
+    border-radius: 1rem;
+  }
+}

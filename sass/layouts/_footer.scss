@@ -1,0 +1,36 @@
+/* FOOTER */
+
+.footer {
+  height: 30.8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include x-desktop-only {
+    height: 42.8rem;
+  }
+
+  &-background {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      width: 100%;
+      z-index: 0;
+      background-color: rgba(77, 150, 168, 89.55%);
+
+      @extend .footer-background;
+    }
+  }
+
+  > .timeline {
+    position: absolute;
+    top: calc(-14rem + 2.7rem);
+    left: calc(50% - 2.7rem);
+  }
+}
