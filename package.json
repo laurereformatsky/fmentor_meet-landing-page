@@ -1,0 +1,23 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "Poject made with Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "htmlhint": "htmlhint ./index.html",
+    "stylelint": "stylelint ./sass/"
+  },
+  "author": "Laure Réformatsky",
+  "license": "ISC",
+  "devDependencies": {
+    "doiuse": "^4.4.1",
+    "htmlhint": "^1.1.4",
+    "postcss": "^8.4.13",
+    "postcss-scss": "^4.0.4",
+    "sass": "^1.51.0",
+    "stylelint": "^14.8.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}
